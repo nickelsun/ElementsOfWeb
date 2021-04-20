@@ -1,0 +1,45 @@
+#root {
+   width: 75%;
+   max-width: 500px;
+   margin: 0 auto;
+}
+
+.hidden {
+   display: none;
+}
+
+#alertMessage {
+   padding: 1em;
+   background-color: maroon;
+   color: white;
+   font-weight: bold;
+}
+
+#list {
+   list-style: none;
+   padding-left: 0;
+}
+
+.tweet {
+   margin: 2px;
+   padding: 4px 1em;
+   background-color: #afa;
+   position: relative;
+}
+
+.likedTweet {
+   background-color: #faa;
+}
+
+.likedTweet::before {
+   content: '\2764';
+   color: red;
+   position: absolute;
+   right: 4px;
+   top: 0;
+}
+
+#modifyItemInput {
+   width: 100%;
+   height: 200px;
+}
