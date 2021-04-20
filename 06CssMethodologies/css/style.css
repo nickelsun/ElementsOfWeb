@@ -1,0 +1,38 @@
+body {
+   font-family: Roboto, sans-serif;
+
+   color: rgb(52,52,52);
+}
+
+
+.fs-a1 { font-size: 22px; }
+
+.fs-a2 { font-size: 20px; }
+
+.fs-b1 { font-size: 48px; }
+
+.fs-b2 { font-size: 36px; }
+
+.fs-b3 { font-size: 24px; }
+
+
+.c-black1 { color: #111; }
+
+.c-gray1 { color: rgb(52,52,52); }
+
+.c-white { color: white; }
+
+.c-coral { color: coral; }
+
+.c-lightcoral { color: lightcoral; }
+
+.bgc-black1 { background-color: #111; }
+
+.bgc-grey1 { background-color: rgb(52,58,64); }
+
+.bgc-white { background-color: white; }
+
+.bgc-coral { background-color: coral; }
+
+.border-lightcoral { border-color: lightcoral; }
+

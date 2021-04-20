@@ -1,0 +1,156 @@
+:root {
+  --decor-color: lightskyblue; 
+}
+
+@media print {
+  .tm-sidebar,
+  .tm-main-content section:nth-of-type(n + 2),
+  .tm-main-content div#about {
+    display: none;
+  }
+}
+
+.flex-2-col {
+   display: flex;
+   align-items: center;
+}
+
+.box-bg:hover {
+  background-color: var(--decor-color);
+  transition: background-color 0.5s;
+}
+
+.box-bg:hover .tm-box-bg-title {
+  font-weight: bold;
+  color: white;
+}
+
+p::first-letter {
+  color: var(--decor-color);
+  font-size: 30px;
+}
+
+@media screen {
+  .tm-sidebar,
+  .tm-content-box {
+    box-shadow: 0 0 8px 0 gray;
+  }
+}
+
+.tm-banner {
+  border: gray;
+}
+
+@media screen {
+  section {
+    position: relative;
+  }
+  section::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 20px solid var(--decor-color); 
+    border-right: 200px solid transparent;	
+  }
+}
+
+section#ideas .tm-section-title {
+  color: gainsboro;
+  letter-spacing: 5px;
+}
+
+h2+p {
+  font-style: italic;
+}
+
+p:not(.tm-banner-text) {
+  line-height: 2em;
+  text-indent: 2em;
+}
+
+section.heading a,
+section.heading a:link
+{
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  border-bottom-color: white;
+}
+
+section.heading a:visited {
+  border-bottom-color: black;
+}
+
+section.heading a:hover {
+  color: var(--decor-color);
+  border-bottom: 4px double;
+}
+
+section.heading li:nth-of-type(1)::after,
+section.heading li:nth-of-type(3)::after {
+  content: 'New';
+  color: red;
+  vertical-align: super;
+  font-size: small;
+}
+
+section.blocks .gallery-container {
+  display: flex;
+  padding: 10px 0 0 0;
+  background-color: #f2f2f2;
+}
+
+section.blocks .box {
+  padding: 10px;
+}
+
+section.blocks .box:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+section.blocks .gallery-container p {
+  line-height: normal;
+  text-indent: 0;
+
+}
+
+section.blocks .gallery-container p::first-letter {
+  color: gray;
+  font-size: 30px;
+}
+
+.form-group:nth-of-type(2)::after {
+  content: '*';
+  color: red;
+  font-weight: bold;
+}
+
+.submit-btn {
+  display: block;
+  width: 200px;
+  height: 70px;
+
+  margin-left: auto;
+  margin-right: 0;
+  border: 1px solid var(--decor-color);
+  border-radius: 0;
+
+  color: var(--decor-color);
+  background-color: white;
+  
+  font-size: 1.5em;
+}
+
+.submit-btn:hover {
+   color: white;
+   background-color: #99DDFF;
+   border-color: var(--decor-color);
+}
+
+.tm-nav-item:hover {
+  background-color: #eee;
+}

@@ -1,0 +1,260 @@
+%logo-base {
+  img {
+    float: left;
+    margin-right: 14px;
+  }
+
+  p {
+    font-family: $logo-font, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 0;
+
+    span {
+      margin-top: -8px;
+      display: block;
+      font-size: 10px;
+      margin-left: 14px;
+    }
+  }
+}
+
+@mixin button() {
+  width: 140px;
+  height: 50px;
+  outline: none;
+  border: 0;
+  border-radius: 2px;
+  background-color: $button-bg-color;
+  color: $button-text-color;
+  font-family: $button-font, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@mixin link($color) {
+  color: $color;
+  font-family: $link-font, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 30px;
+}
+
+@mixin hilight-before($l, $t, $w, $h) {
+  content: "";
+  position: absolute;
+  left: $l;
+  top: $t;
+  width: $w;
+  height: $h;
+  background-color: $word-hilight-color;
+  z-index: -1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $bg-color;
+}
+
+p {
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.header {
+  background-image: $header-bg-image;
+  background-size: cover;
+  border-bottom-right-radius: 40%;
+  height: 100vh;
+  min-height: 600px;
+
+  .header-wrap {
+    width: 520px;
+    padding-left: 192px;
+    padding-top: 20px;
+
+    .landing-logo {
+      @extend %logo-base;
+
+      p {
+        color: $upper-logo-text-color;
+      }
+    }
+
+    .header_heading {
+      margin-top: 76px;
+      color: $header-text-color;
+      font-size: 75px;
+      font-weight: bold;
+      font-family: $header-font, sans-serif;
+      line-height: 1;
+
+      position: relative;
+      z-index: 1;
+
+      &:before {
+        @include hilight-before(0, 90px, 315px, 50px);
+      }
+    }
+
+    .header_text {
+      color: $header-text-color;
+      font-family: $header-font, sans-serif;
+      margin-top: 50px;
+    }
+
+    div:last-of-type {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .header_button {
+        @include button();
+      }
+
+      a.login {
+        @include link($header-link-color);
+      }
+    }
+  }
+}
+
+.section {
+  .section_text {
+    text-align: center;
+    color: $main-heading-color;
+    font-family: $section-heading-font, sans-serif;
+    font-size: 48px;
+
+    margin: 80px auto 0 auto;
+    width: 500px;
+
+    position: relative;
+    z-index: 1;
+
+    &:before {
+      @include hilight-before(265px, 2px, 205px, 50px);
+    }
+  }
+
+  .section_card {
+    width: 60%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    background-color: $card-bg-color;
+    border-radius: 4px;
+
+    .section_card_img {
+      margin: 16px;
+      border-radius: 4px;
+    }
+
+    .section_card_right_container {
+      margin: 48px 48px;
+      text-align: center;
+
+      .section_card_heading {
+        color: $card-heading-color;
+        font-family: $card-heading-font, sans-serif;
+        font-size: 32px;
+      }
+
+      .section_card_text {
+        text-align: justify;
+        color: $card-text-color;
+        font-family: $card-text-font, sans-serif;
+      }
+
+      .section_link {
+        @include link($card-link-color);
+      }
+    }
+  }
+
+  .section_banner {
+    margin: 20px auto;
+    width: 70%;
+    height: 150px;
+    position: relative;
+    top: 100px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border-radius: 4px;
+    background: linear-gradient(
+      to right,
+      map-get($banner-grad-colors, "left"),
+      map-get($banner-grad-colors, "right")
+    );
+
+    .section_banner_text_wrap {
+      flex-basis: 60%;
+
+      .section_banner_heading {
+        color: $banner-heading-color;
+        font-family: $banner-heading-font, sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+
+        position: relative;
+        z-index: 1;
+
+        &:before {
+          @include hilight-before(130px, -10px, 65px, 50px);
+        }
+      }
+
+      .section_banner_text {
+        color: $banner-text-color;
+        font-family: $banner-text-font, sans-serif;
+      }
+    }
+
+    .section_banner_button {
+      @include button();
+    }
+  }
+}
+
+.footer {
+  height: 250px;
+  background-color: $footer-bg-color;
+  color: $footer-text-color;
+
+  .footer-wrap {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: $footer-text-font, sans-serif;
+    font-size: 14px;
+
+    .landing-logo {
+      @extend %logo-base;
+
+      flex-basis: 25%;
+
+      p {
+        color: $lower-logo-text-color;
+      }
+    }
+
+    .footer_text {
+      flex-basis: 25%;
+    }
+
+    .footer-cr {
+      flex-basis: 25%;
+      text-align: right;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+
+$dark-bg-color: rgb(33,35,46);
+$dark-bg-color2: rgb(59,63,80);
+$light-text-color: rgb(192,195,206);
+$light-text-color2: rgb(209,209,209);
+
+
+$header-bg-image: url("../img/m-h-night.jpg");
+
+$bg-color: $dark-bg-color;
+$card-bg-color: $dark-bg-color2;
+$footer-bg-color: $dark-bg-color2;
+$word-hilight-color: rgb(255,78,51);
+$button-bg-color: rgb(227,172,0);
+
+$banner-grad-colors: ('left':rgb(221,163,5), 'right':rgb(152,53,77));
+
+$upper-logo-text-color: white;
+$lower-logo-text-color: $light-text-color2;
+
+$button-text-color: white;
+
+$header-text-color: white;
+$header-link-color: white;
+
+$main-heading-color: white;
+
+$card-heading-color: white;
+$card-text-color: $light-text-color;
+$card-link-color: $light-text-color;
+
+$banner-heading-color: white;
+$banner-text-color: $light-text-color;
+
+$footer-text-color: $light-text-color2;
+
+
+$font0: 'Source Sans Pro';
+$font1: 'Fresca';
+
+
+$button-font: $font0;
+$link-font: $font0;
+$logo-font: $font1;
+$header-font: $font1;
+$section-heading-font: $font0;
+$card-heading-font: $font0;
+$card-text-font: $font1;
+$banner-heading-font: $font0;
+$banner-text-font: $font1;
+$footer-text-font: $font1;

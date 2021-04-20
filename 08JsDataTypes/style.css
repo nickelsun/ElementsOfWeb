@@ -1,0 +1,48 @@
+
+.wrap {
+   width: 75%;
+   margin: 0 auto;
+}
+
+.heading {
+   text-align: center;
+}
+
+.event-form {
+   display: flex;
+   flex-direction: column;
+   border: 1px solid #ccc;
+   padding: 8px;
+   display: none;
+}
+
+.form-visible {
+   display: block;
+}
+
+label,
+input,
+.buttons-wrap
+{
+    display: block;
+    margin-bottom: 12px;
+}
+
+input
+{
+   box-sizing: border-box;
+   width: 100%;
+   height: 25px;
+   background-color: rgb(82, 241, 241);
+   border: 0;
+   padding-left: 1em;
+}
+
+button {
+   height: 32px;
+   width: 100px;
+   background-color: rgb(42, 131, 53);
+   color: white;
+   border: 1px solid green;
+   margin-top: 8px;
+}

@@ -1,0 +1,192 @@
+.header .header-wrap .landing-logo img, .footer .footer-wrap .landing-logo img {
+  float: left;
+  margin-right: 14px; }
+.header .header-wrap .landing-logo p, .footer .footer-wrap .landing-logo p {
+  font-family: "Hind", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 0; }
+  .header .header-wrap .landing-logo p span, .footer .footer-wrap .landing-logo p span {
+    margin-top: -8px;
+    display: block;
+    font-size: 10px;
+    margin-left: 14px; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: white; }
+
+p {
+  margin-bottom: 10px;
+  margin-bottom: 10px; }
+
+.header {
+  background-image: url("../img/m-h-day.jpg");
+  background-size: cover;
+  border-bottom-right-radius: 40%;
+  height: 100vh;
+  min-height: 600px; }
+  .header .header-wrap {
+    width: 520px;
+    padding-left: 192px;
+    padding-top: 20px; }
+    .header .header-wrap .landing-logo p {
+      color: #2c2f3c; }
+    .header .header-wrap .header_heading {
+      margin-top: 76px;
+      color: #2c2f3c;
+      font-size: 75px;
+      font-weight: bold;
+      font-family: "Hind", sans-serif;
+      line-height: 1;
+      position: relative;
+      z-index: 1; }
+      .header .header-wrap .header_heading:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 90px;
+        width: 315px;
+        height: 50px;
+        background-color: #14a0c7;
+        z-index: -1; }
+    .header .header-wrap .header_text {
+      color: #2c2f3c;
+      font-family: "Hind", sans-serif;
+      margin-top: 50px; }
+    .header .header-wrap div:last-of-type {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .header .header-wrap div:last-of-type .header_button {
+        width: 140px;
+        height: 50px;
+        outline: none;
+        border: 0;
+        border-radius: 2px;
+        background-color: #699900;
+        color: white;
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 20px;
+        font-weight: bold; }
+      .header .header-wrap div:last-of-type a.login {
+        color: white;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        margin-right: 30px; }
+
+.section .section_text {
+  text-align: center;
+  color: #2c2f3c;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 48px;
+  margin: 80px auto 0 auto;
+  width: 500px;
+  position: relative;
+  z-index: 1; }
+  .section .section_text:before {
+    content: "";
+    position: absolute;
+    left: 265px;
+    top: 2px;
+    width: 205px;
+    height: 50px;
+    background-color: #14a0c7;
+    z-index: -1; }
+.section .section_card {
+  width: 60%;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  background-color: #21232e;
+  border-radius: 4px; }
+  .section .section_card .section_card_img {
+    margin: 16px;
+    border-radius: 4px; }
+  .section .section_card .section_card_right_container {
+    margin: 48px 48px;
+    text-align: center; }
+    .section .section_card .section_card_right_container .section_card_heading {
+      color: white;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 32px; }
+    .section .section_card .section_card_right_container .section_card_text {
+      text-align: justify;
+      color: #c0c3ce;
+      font-family: "Hind", sans-serif; }
+    .section .section_card .section_card_right_container .section_link {
+      color: #c0c3ce;
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: bold;
+      font-size: 20px;
+      margin-right: 30px; }
+.section .section_banner {
+  margin: 20px auto;
+  width: 70%;
+  height: 150px;
+  position: relative;
+  top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 4px;
+  background: linear-gradient(to right, #66960b, #2f5dd2); }
+  .section .section_banner .section_banner_text_wrap {
+    flex-basis: 60%; }
+    .section .section_banner .section_banner_text_wrap .section_banner_heading {
+      color: #2c2f3c;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 32px;
+      font-weight: bold;
+      position: relative;
+      z-index: 1; }
+      .section .section_banner .section_banner_text_wrap .section_banner_heading:before {
+        content: "";
+        position: absolute;
+        left: 130px;
+        top: -10px;
+        width: 65px;
+        height: 50px;
+        background-color: #14a0c7;
+        z-index: -1; }
+    .section .section_banner .section_banner_text_wrap .section_banner_text {
+      color: #c0c3ce;
+      font-family: "Hind", sans-serif; }
+  .section .section_banner .section_banner_button {
+    width: 140px;
+    height: 50px;
+    outline: none;
+    border: 0;
+    border-radius: 2px;
+    background-color: #699900;
+    color: white;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 20px;
+    font-weight: bold; }
+
+.footer {
+  height: 250px;
+  background-color: #21232e;
+  color: #c0c3ce; }
+  .footer .footer-wrap {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Hind", sans-serif;
+    font-size: 14px; }
+    .footer .footer-wrap .landing-logo {
+      flex-basis: 25%; }
+      .footer .footer-wrap .landing-logo p {
+        color: #c0c3ce; }
+    .footer .footer-wrap .footer_text {
+      flex-basis: 25%; }
+    .footer .footer-wrap .footer-cr {
+      flex-basis: 25%;
+      text-align: right; }
