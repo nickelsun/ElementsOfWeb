@@ -1,0 +1,100 @@
+/* START: Task 1 Styles */
+#task1 {
+   margin-bottom: 3em;   
+}
+
+#table1 {
+   height: 400px;
+   width: 400px;
+   background-color: white;
+   cursor: pointer;
+}
+
+#table1 td {
+   border: solid 1px black;
+   text-align: center;
+}
+
+.green {
+   background-color: green;
+}
+
+.blue {
+   background-color: blue;
+}
+
+.yellow {
+   background-color: yellow;
+}
+/* END: Task 1 Styles */
+
+/* START: Task 2 Styles */
+#task2 {
+   margin-bottom: 3em;
+}
+
+.notification-block {
+   display: none;
+   background-color: #f66;
+   color: white;
+   border: solid 1px gray;
+   outline: transparent;
+   padding: 1em;
+}
+
+#phone-input {
+   width: 350px;
+}
+
+.notification-visible {
+   display: block;
+}
+
+.notify-success {
+   background-color: green;
+}
+
+.red-border {
+   border: solid 1px red;
+   outline: transparent;
+}
+/* END: Task 2 Styles */
+
+/* START: Task 3 Styles */
+#task3 {
+   margin-bottom: 3em;
+}
+
+#game-wrap {
+   width: 600px;
+   font-weight: bold;
+}
+
+#court-wrap {
+   position: relative;
+   overflow: hidden;
+}
+
+#ball {
+   position: absolute;
+   left: 280px; 
+   top: 130px;
+}
+
+#score-a-label {
+   float: left;
+}
+
+#score-b-label {
+   text-align: right;
+}
+
+#score-notification {
+   display: none;
+   text-align: center;
+}
+
+.fade-out {
+   transition: opacity 3s;
+ }
+/* END: Task 3 Styles */

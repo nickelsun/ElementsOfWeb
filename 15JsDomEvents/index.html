@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Homework 15 - JS DOM Events</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="task1">
+    <!-- TEMPLATE FOR TASK 1 GOES HERE -->
+    <h2>Selectable Cells</h2>    
+    <table id="table1">
+      <colgroup>
+        <col width=33%>
+        <col width=33%>
+        <col width=33%>
+      </colgroup>
+      <tr>
+        <td>Cell</td><td>Cell</td><td>Special Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td><td>Cell</td><td>Cell</td>
+      </tr>
+      <tr>
+        <td>Cell</td><td>Cell</td><td>Cell</td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="task2">
+    <!-- TEMPLATE FOR TASK 2 GOES HERE -->
+    <h2>Phone Number with Validation</h2>
+    <p id='notification-block' class='notification-block'></p>
+    <input id='phone-input' type='text' placeholder='Type phone number in format +380 *********'>
+    <button id='send-button' type='button' disabled >Send</button>
+  </div>
+
+  <div id="task3">
+    <!-- TEMPLATE FOR TASK 3 GOES HERE -->
+    <h2>Basketball game</h2>
+    <div id="game-wrap">
+      <div id="court-wrap">
+        <img id='court' width="600" height="300" src="./assets/court.png" alt="court">
+        <img id='ball' width="40" height="40" src="./assets/ball.png" alt="ball">
+      </div>
+      <div id="score-wrap">
+        <div id="score-a-label">Team A: 0</div>
+        <div id="score-b-label">Team B: 0</div>
+      </div>
+      <div id="score-notification"></div>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
