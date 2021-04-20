@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Basics</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <main id="main">
+        <div id="container">
+          <div id="content" role="main">
+            <header>
+              <img src="./logo.png" alt="logo" />
+              <h1>HTML Elements</h1>
+              <hr />
+
+              <nav>
+                <a href="#">Home</a>
+                <a href="#section_headers">Headers</a>
+                <a href="#section_table">Table</a>
+                <a href="#section_list">List</a>
+                <a href="#section_text">Text formats</a>
+                <a href="#section_blockquotes">Blockquotes</a>
+              </nav>
+              <hr />
+            </header>
+
+            <section id="section_headers">
+              <p>
+                Pay attention to h1 tag inside section element. Font-size for h1
+                is the same as font-size for h2, because we have to use only one
+                h1 on the page, and it is commonly used inside header
+              </p>
+
+              <h2>Header 2</h2>
+              <h3>Header 3</h3>
+              <h4>Header 4</h4>
+              <h5>Header 5</h5>
+              <h6>Header 6</h6>
+              <hr />
+
+              <p>
+                Lorem ipsum dolor sit amet, <a href="#">test link</a> adipiscing
+                elit. <strong>This is strong</strong>. Nullam dignissim
+                convallis est. Quisque aliquam. <em>This is emphasized</em>.
+                Donec faucibus. Nunc iaculis suscipit dui. 5<sup>3</sup> = 125.
+                Water is H<sub>2</sub>O. Nam sit amet sem. Aliquam libero nisi,
+                imperdiet at, tincidunt nec, gravida vehicula, nisl.
+                <cite>The New York Times</cite> (That’s a citation).<u>Underline.</u>
+                Maecenas ornare tortor. Donec sed tellus eget sapien fringilla
+                nonummy. Mauris a ante. Suspendisse quam sem, consequat at,
+                commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis
+                tellus.
+              </p>
+
+              <p>
+                <abbr title="HyperText Markup Language">HTML</abbr> and
+                <abbr title="Cascading Style Sheets">CSS</abbr> are our tools.
+                Mauris a ante. Suspendisse quam sem, consequat at, commodo
+                vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
+                Praesent mattis, massa quis luctus fermentum, turpis mi volutpat
+                justo, eu volutpat enim diam eget metus. To copy a file type
+                <kbd>COPY <var>filename</var></kbd>. <s>Dinner`s at 5:00.</s> Let’s make that 7. This
+                <del>text</del> has been struck.
+              </p>
+
+              <hr />
+            </section>
+
+            <section id="section_table">
+              <h2>Table</h2>
+
+              <table>
+                <tr>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                </tr>
+
+                <tr>
+                  <td>Lviv</td>
+                  <td>Kyiv</td>
+                  <td>Kharkiv</td>
+                </tr>
+
+                <tr>
+                  <td>Odessa</td>
+                  <td>Zhytomyr</td>
+                  <td>Dnipropetrovsk</td>
+                </tr>
+
+                <tr>
+                  <td>Sumy</td>
+                  <td>Chernivtsi</td>
+                  <td>Lutsk</td>
+                </tr>
+              </table>
+            </section>
+
+            <section id="section_list">
+              <h2>Unordered List</h2>
+
+              <ul>
+                <li>List item 1</li>
+                <li>
+                  List item 2
+                  <ul>
+                    <li>Some nested list item 1</li>
+                  </ul>
+                </li>
+                <li>List item 3</li>
+              </ul>
+
+              <h2>Ordered List</h2>
+
+              <ol type="1">
+                <li>List item 1</li>
+                <li>
+                  List item 2
+                  <ol type="A">
+                    <li>Some nested list item 1</li>
+                  </ol>
+                </li>
+                <li>List item 3</li>
+              </ol>
+
+              <h3>Definition List</h3>
+
+              <dl>
+                <dt>defines terms 1</dt>
+                <dd>description 1</dd>
+                <dt>defines terms 2</dt>
+                <dd>description 2</dd>
+              </dl>
+
+              <label for="select_technology">Details</label>
+
+              <select id="select_technology">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JS</option>
+              </select>
+
+              <hr />
+            </section>
+
+            <section id="section_text">
+              <h2>Text formats</h2>
+
+              <h3>Article Text</h3>
+
+              <article>
+                <h2>Article title</h2>
+                <p>Article description</p>
+              </article>
+
+              <h3>Preformatted Text</h3>
+
+              <pre>
+Text
+  in a pre element
+    is displayed in a fixed-width
+font, and it preserves
+both           spaces and
+    line breaks
+            </pre>
+
+              <h3>Code</h3>
+
+              <pre>
+              <code>
+.wrapper {
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+}
+              </code>  
+            </pre>
+            </section>
+
+            <section id="section_blockquotes">
+              <h2>Blockquotes</h2>
+
+              <p>
+                Let’s keep it simple. Italics are good to help set it off from
+                the body text. Be sure to style the citation.
+              </p>
+
+              <blockquote
+                cite="https://www.forbes.com/sites/realspin/2014/03/28/the-new-economic-census-will-help-unleash-the-economic-magic-of-u-s-government-data/?sh=6831d4bf5561"
+              >
+                "If you go back a few hundred years, what we take for granted
+                today would seem like magic-being able to talk to people over
+                long distances, to transmit images, flying, accessing vast
+                amounts of data like an oracle. These are all things that would
+                have been considered magic a few hundred years ago."<br />
+                <a href="https://en.wikipedia.org/wiki/Elon_Musk" rel="author"
+                  >Elon Musk</a>
+              </blockquote>
+
+              <hr />
+            </section>
+
+            <form action="#" method="post" target="_top">
+              <label for="form--first-name">First name:</label>
+              <input type="text" id="form--first-name" />
+              <br />
+
+              <label for="form--surname-name">Surname:</label>
+              <input type="text" id="form--surname-name" />
+              <br />
+
+              <label for="form--email">Email:</label>
+              <input type="email" id="form--email" />
+              <br />
+
+              <textarea cols="30" rows="10"></textarea>
+              <br />
+
+              <button type="submit">Submit</button>
+            </form>
+
+            <footer>&copy; Copyright Epam Systems</footer>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
