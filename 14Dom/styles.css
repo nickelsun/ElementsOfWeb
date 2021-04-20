@@ -1,0 +1,52 @@
+#app-root {
+   margin: 0 auto;
+   width: 90%;
+   font-family: sans-serif;
+}
+
+.hidden {
+   display: none;
+}
+
+h1 {
+   text-align: center;
+}
+
+#search-form p {
+   float: left;
+   clear: both;
+}
+
+#no-results-label {
+   clear: both;
+   font-size: 1.5em;
+}
+
+#results-table {
+   width: 100%;
+   text-align: center;
+   color: gray;
+}
+
+#results-table tr:nth-child(odd) {
+   background-color: #ddd;
+}
+
+#results-table th {
+   height: 2em;
+}
+
+#results-table tr:nth-child(even) {
+   background-color: white;
+}
+
+#results-table th {
+   background-color: rgb(2, 128, 44);
+   color: white;
+}
+
+.sort-arrow {
+   color: yellow;
+   font-weight: bold;
+   cursor: pointer;
+}
