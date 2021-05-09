@@ -1,2 +1,2 @@
 # ElementsOfWeb
-Samples of site layout, styling and scripting.
+Samples of layout, styling, and scripting.
